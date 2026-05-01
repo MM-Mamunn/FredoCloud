@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node src/server.js",
     "build": "prisma generate",
+    "postinstall": "prisma generate",
     "start": "node src/server.js",
     "lint": "node --check src/server.js && node --check src/app.js",
     "prisma:generate": "prisma generate",
