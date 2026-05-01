@@ -1,6 +1,6 @@
 # Collaborative Team Hub
-[Video Tutorial](https://drive.google.com/file/d/1-eMZBPUtkTan80XjhKZCJSBhU1zpzicB/view?usp=sharing)
-[Live](https://fredo-cloud-frontend.vercel.app/)
+[Video Tutorial](https://drive.google.com/file/d/1-eMZBPUtkTan80XjhKZCJSBhU1zpzicB/view?usp=sharing) \\
+[Live](https://fredo-cloud-frontend.vercel.app/)\\
 A simple JavaScript-only full-stack implementation of the FredoCloud intern assignment. The repository is split into two deployable apps:
 
 - `frontend` - Next.js App Router, Tailwind CSS, Zustand, Recharts, Socket.io client
