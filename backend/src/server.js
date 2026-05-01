@@ -3,15 +3,15 @@ require("dotenv").config();
 const http = require("http");
 const { Server } = require("socket.io");
 const app = require("./app");
+const { getAllowedOrigins } = require("./corsConfig");
 
 const port = process.env.PORT || 4000;
-const clientUrl = process.env.CLIENT_URL || "http://localhost:3000";
 const server = http.createServer(app);
 const onlineByWorkspace = new Map();
 
 const io = new Server(server, {
   cors: {
-    origin: clientUrl,
+    origin: getAllowedOrigins(),
     credentials: true
   }
 });

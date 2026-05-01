@@ -9,11 +9,11 @@ const auth = require("./routes/auth");
 const goals = require("./routes/goals");
 const users = require("./routes/users");
 const workspaces = require("./routes/workspaces");
+const { corsOrigin } = require("./corsConfig");
 
 const app = express();
-const clientUrl = process.env.CLIENT_URL || "http://localhost:3000";
 
-app.use(cors({ origin: clientUrl, credentials: true }));
+app.use(cors({ origin: corsOrigin, credentials: true }));
 app.use(express.json({ limit: "2mb" }));
 app.use(cookieParser());
 
